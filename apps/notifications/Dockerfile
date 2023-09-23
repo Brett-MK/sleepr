@@ -12,6 +12,8 @@ COPY libs libs
 
 RUN yarn install
 
+# RUN cd apps/notifications && yarn install
+
 RUN yarn build notifications
 
 FROM node:alpine As production
