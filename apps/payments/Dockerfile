@@ -11,8 +11,6 @@ COPY libs libs
 
 RUN yarn install
 
-# RUN cd apps/payments && yarn install
-
 RUN yarn build payments
 
 FROM node:alpine As production
