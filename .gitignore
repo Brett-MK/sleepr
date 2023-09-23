@@ -35,3 +35,4 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 .env
+sleepr-399918-7d8dea06004f.json
