@@ -21,6 +21,7 @@ ENV NODE_ENV=${NODE_ENV}
 WORKDIR /usr/src/app
 
 COPY package.json ./
+COPY apps/auth/package.json apps/auth
 COPY yarn.lock ./
 
 RUN yarn install --production
