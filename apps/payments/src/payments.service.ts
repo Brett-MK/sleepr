@@ -1,8 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { stripVTControlCharacters } from 'util';
 import Stripe from 'stripe';
 import { ConfigService } from '@nestjs/config';
-import { CreateChargeDto } from '../../../libs/common/src/dto/create-charge.dto';
 import { NOTIFICATIONS_SERVICE } from '@app/common';
 import { ClientProxy } from '@nestjs/microservices';
 import { PaymentsCreateChargeDto } from './dto/payment-create-charge.dto';
